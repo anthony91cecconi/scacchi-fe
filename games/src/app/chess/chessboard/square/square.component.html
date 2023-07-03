@@ -1,0 +1,8 @@
+<div *ngIf="square?.show">
+  <span *ngIf="square?.x;else notX">
+    {{ square?.x }}
+  </span>
+  <ng-template #notX>
+    {{ square?.y }}
+  </ng-template>
+</div>

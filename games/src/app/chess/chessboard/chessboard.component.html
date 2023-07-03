@@ -1,0 +1,9 @@
+<p>chessboard works!</p>
+
+
+
+<div class="container" >
+  <div *ngFor="let item of table" class="square" [ngClass]="item?.color? 'black':'' ">
+    <app-square [square]="item"></app-square>
+  </div>
+</div>
